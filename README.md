@@ -1,0 +1,3 @@
+# Efficient One-stage Video Object Detection by Exploiting Temporal Consistency (ECCV22)
+
+We are preparing the documents and code annotations. The code will be released shortly ...
