@@ -113,7 +113,7 @@ CUDA_VISIBLE_DEVICES=4,5,6,7 PORT=29501 ./tools/dist_train.sh ${CONFIG_FILE} 4
 1. Train EOVOD(FCOS) and then evaluate AP at the last epoch.
 
    ```shell
-   ./tools/dist_train.sh configs/vid/time_swin_lite/faster_rcnn_time_swint_lite_fpn_0.000025_3x_tricks_stride3_train.py 8
+   ./tools/dist_train.sh configs/vid/fcos_att/fcos_att_r101_fpn_9x_vid_caffe_random_level2_imagenet.py 8
    ```
 
 ### Inference
@@ -149,19 +149,19 @@ Optional arguments:
 
 Assume that you have already downloaded the checkpoints to the directory `checkpoints/`.
 
-1. Test DFF on ImageNet VID, and evaluate the bbox mAP.
+1. Test EOVOD on ImageNet VID, and evaluate the bbox mAP.
 
    ```shell
-   python tools/test.py configs/vid/tdvit/dff_faster_rcnn_r101_dc5_1x_imagenetvid.py \
-       --checkpoint checkpoints/dff_faster_rcnn_r101_dc5_1x_imagenetvid_20201218_172720-ad732e17.pth \
+   python tools/test.py configs/vid/fcos_att/fcos_att_r101_fpn_9x_vid_caffe_random_level2_imagenet.py \
+       --checkpoint checkpoints/$CHECKPOINT_FILE \
        --out results.pkl \
        --eval bbox
    ```
 2. Test DFF with 8 GPUs on ImageNet VID, and evaluate the bbox mAP.
 
    ```shell
-   ./tools/dist_test.sh configs/vid/dff/dff_faster_rcnn_r101_dc5_1x_imagenetvid.py 8 \
-       --checkpoint checkpoints/dff_faster_rcnn_r101_dc5_1x_imagenetvid_20201218_172720-ad732e17.pth \
+   ./tools/dist_test.sh configs/vid/fcos_att/fcos_att_r101_fpn_9x_vid_caffe_random_level2_imagenet.py 8 \
+       --checkpoint checkpoints/$CHECKPOINT_FILE \
        --out results.pkl \
        --eval bbox
    ```
