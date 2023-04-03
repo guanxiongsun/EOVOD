@@ -157,7 +157,7 @@ Assume that you have already downloaded the checkpoints to the directory `checkp
        --out results.pkl \
        --eval bbox
    ```
-2. Test DFF with 8 GPUs on ImageNet VID, and evaluate the bbox mAP.
+2. Test EOVOD with 8 GPUs on ImageNet VID, and evaluate the bbox mAP.
 
    ```shell
    ./tools/dist_test.sh configs/vid/fcos_att/fcos_att_r101_fpn_9x_vid_caffe_random_level2_imagenet.py 8 \
