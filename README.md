@@ -10,12 +10,13 @@ The code based on two open-source toolboxes: [mmtracking](https://github.com/ope
 
 ## Main Results
 
-Pretrained models are now available at [Baidu](https://pan.baidu.com/s/1qjIAD3ohaJO8EF1mZ4nLEg) (code: neck) and Google Drive.
+Pretrained models and logs are available at the [GoogleDrive](https://drive.google.com/drive/folders/11yZYjtDDJuvSkW_xuX9bxMin_dJCVx-v?usp=share_link).
 
 
-|  Model  |  Backbone  |  AP  | AP50 | AP75 | AP small | AP medium | AP large | Link |
-| :------: | :--------: | :--: | :--: | :--: | :------: | :-------- | :------- | :--- |
-| FCOS+LPN | ResNet-101 | 54.0 | 79.7 | 59.3 |   9.8   | 26.6      | 60.4     | xxx  |
+|  Model  |  Backbone  |  AP  | AP50 | AP75 | AP small | AP medium | AP large | Model and Log                                                                                          |
+| :------: | :--------: | :--: | :--: | :--: | :------: | :-------- | :------- | :----------------------------------------------------------------------------------------------------- |
+| FCOS+LPN | ResNet-101 | 54.0 | 79.7 | 59.3 |   9.8   | 26.6      | 60.4     | [GoogleDrive](https://drive.google.com/drive/folders/11yZYjtDDJuvSkW_xuX9bxMin_dJCVx-v?usp=share_link) |
+
 
 ## Installation
 
